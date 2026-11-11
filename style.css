@@ -1,0 +1,32 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #121212;
+    border: 2px solid  #800000;
+}
+
+.control {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    background: #808080;
+    color: #ffffff;
+    border: 1px solid #800000;
+    font-weight: bold;
+}
