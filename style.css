@@ -12,15 +12,15 @@ body {
 
 canvas {
     background-color: #121212;
-    border: 2px solid  #800000;
+    border: 3px solid #800000;
 }
 
-.control {
-    margin-top: 15px;
+.controls {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
 }
 
 button {
