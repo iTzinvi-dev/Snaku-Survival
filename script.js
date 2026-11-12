@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const scoreEl = document.getElementById("score");
 
-const box = 20;
+const box = 21;
 let score = 0;
 let isGameOver = false;
 
