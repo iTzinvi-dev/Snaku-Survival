@@ -2,7 +2,7 @@ const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const scoreEl = document.getElementById("score");
 
-const box = 21;
+const box = 22;
 let score = 0;
 let isGameOver = false;
 
@@ -21,7 +21,7 @@ function setDir(newDx, newDy) {
     }
 }
 
-document.addEventListener("keydown",(e)=> {
+document.addEventListener("keydown", (e)=> {
     if (e.key === "ArrowUp") setDir(0, -1);
     if (e.key === "ArrowDown") setDir(0, 1);
     if (e.key === "ArrowLeft") setDir(-1, 0);
