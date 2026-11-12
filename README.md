@@ -5,4 +5,4 @@
   
   here is the link :       
   
-      https://github.com/iTzinvi-dev/Snaku-Survival/
+      https://itzinvi-dev.github.io/Snaku-Survival/
