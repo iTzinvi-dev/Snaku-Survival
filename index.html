@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ui">
-        <h2>Survived: <span id="score">0</span></h2>
+    <div id="menuOverlay" class="overlay">
+        <h1>Snaku // AI SURVIVAL</h1>
+        <p id="aiStatus">AI Brain: Untrained (Heuristic Mode)</p>
+         <button onclick="startGame('play')">PLAY VS AI</button>
+         <button onclick="startGame('train')">TRAIN AI (Q-LEARNING)</button>
+         <button onclick="resetAI()">RESET AI BRAIN</button>
     </div>
+
+    <div class="ui">
+        <h2>Survived: <span id="score">0</span>s | Orbs: <span id="orbs">0</span></h2>
+        <p id="trainInfo" style="display:none; color: #00ff00; margin:0;">Episode: <span id="epCount">0</span> | Epsilon: <span id="epsVal">1.0</span></p>
+    </div>
+
     <canvas id="gameCanvas" width="360" height="360"></canvas>
 
-<div class="controls"></div>
+<div class="controls">
     <button onclick="setDir(0, -1)">UP</button>
     <div>
         <button onclick="setDir(-1, 0)">LEFT</button>
         <button onclick="setDir(1, 0)">RIGHT</button>
+        <button onclick="showMenu()">MENU</button>
     </div>
  <Button onclick="setDir(0, 1)">DOWN</Button>
 </div>
+
+    <script src="ai.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
