@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color:#121212;
     color: #ffffff;
     font-family: sans-serif;
     display: flex;
@@ -12,11 +12,11 @@ body {
 
 canvas {
     background-color: #121212;
-    border: 3px solid #800000;
+    border: 2px solid #808080;
 }
 
 .controls {
-    margin-top: 16px;
+    margin-top: 17px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +24,9 @@ canvas {
 }
 
 button {
-    padding: 10px 18px;
-    background: #808080;
-    color: #ffffff;
-    border: 1px solid #800000;
+    padding: 11px 19px;
+    background: #800000;
+    color: #f0faf8;
+    border: 1px solid #808080;
     font-weight: bold;
 }

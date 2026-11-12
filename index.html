@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title> Snaku Survival</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="ui">
-            <h2>Survived: <span id="score">0</span>s</h2>
-        </div>
-        <canvas id="gameCanvas" width="360" height="360"></canvas>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Snaku Survival</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui">
+        <h2>Survived: <span id="score">0</span></h2>
+    </div>
+    <canvas id="gameCanvas" width="360" height="360"></canvas>
 
-    //controls
-        <div class="controls">
-            <button onclick="setDir(0, -1)">UP</button>
-            <div>
-            <button onclick="setDir(-1, 0)">LEFT</button>
-            <button onclick="setDir(1, 0)">RIGHT</button>
-            </div>
-            <button onclick="setDir(0, 1)">DOWN</button>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+<div class="controls"></div>
+    <button onclick="setDir(0, -1)">UP</button>
+    <div>
+        <button onclick="setDir(-1, 0)">LEFT</button>
+        <button onclick="setDir(1, 0)">RIGHT</button>
+    </div>
+ <Button onclick="setDir(0, 1)">DOWN</Button>
+</div>
+    <script src="script.js"></script>
+</body>
 </html>
