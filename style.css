@@ -47,7 +47,7 @@ button {
 
 .overlay h1 {
     color: #00ff00ff;
-    front-size: 23px;
+    font-size: 23px;
     margin: 0;
     text-shadow: 0 0 8px #00ff00;
 }

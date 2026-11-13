@@ -80,7 +80,7 @@ function startGame(mode) {
 }
 
 function showMenu() {
-    isGaneOver = true;
+    isGameOver = true;
     gameMode = "menu";
     clearInterval(gameLoop);
     clearInterval(timerLoop);

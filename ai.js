@@ -41,7 +41,7 @@ function getAIState(botHead, target, box, canvasWidth, canvasHeight, obstacles =
 
 //getManhattanDist
 function getManhattanDist(a, b, box) {
-    return (Math,abs(a.x - b.x) + Math.abs(a.y - b.y)) / box;
+    return (Math.abs(a.x - b.x) + Math.abs(a.y - b.y)) / box;
 }
 
 function chooseAIAction(state, isTraining) {
@@ -76,7 +76,7 @@ function updateQTable(state, actionIdx, reward, nextState) {
 
 function decayEpsilon() {
     if (epsilon > miniEpsilon) {
-        epsilon = Math.max(miniEpsilon, epsilon * epsilonDecay);
+        epsilon = Math.max(minEpsilon, epsilon * epsilonDecay);
     }
 }
 
