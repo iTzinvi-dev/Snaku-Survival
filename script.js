@@ -20,6 +20,7 @@ let stepCount = 0;
 let player = [];
 let dx = 1, dy = 0;
 let bot = [];
+let canTurn = true;
 let orb = { x: 0, y: 0 };
 
 // Ai Training Status
@@ -101,10 +102,15 @@ function resetAI() {
 
 //player controls
 function setDir(newDx, newDy) {
-    if (dx !== -newDx || dy !== -newDy){
+    if (!canTurn) return;
+
+    if (dx === -newDx && dy === -newDy) {
+        return;
+    }
+
         dx = newDx;
         dy = newDy;
-    }
+        canTurn = false;
 }
 
 document.addEventListener("keydown", (e) => {
@@ -133,6 +139,7 @@ function handleEpisodeEnd(msg) {
 
 function update() {
     if (isGameOver) return;
+    canTurn = true;
     stepCount++;
 
     //player movements
@@ -213,7 +220,7 @@ let newDist = getManhattanDist(newBotHead, target, box);
 let reward = newDist < prevDist ? 1 : -1.5;
 
 //bot catches player logic
-if (nextBotX === headX && nextBotY === headY) {
+if (player.some(segment => segment.x === nextBotX && segment.y === nextBotY)) {
     reward = 20;
     let nextState = getAIState(newBotHead, target, box, canvas.width, canvas.height, obstacles);
     updateQTable(prevState, actionIdx, reward, nextState);

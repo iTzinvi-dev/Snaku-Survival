@@ -75,7 +75,7 @@ function updateQTable(state, actionIdx, reward, nextState) {
 }
 
 function decayEpsilon() {
-    if (epsilon > miniEpsilon) {
+    if (epsilon > minEpsilon) {
         epsilon = Math.max(minEpsilon, epsilon * epsilonDecay);
     }
 }
