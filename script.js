@@ -157,7 +157,7 @@ function update() {
 
     //player orbs eating logic
     if (headX === orb.x && headY === orb.y) {
-        orbs+++;
+        orbs++;
         orbsEl.innerText = orbs;
         spawnOrb();
     } else {
