@@ -1,5 +1,12 @@
 //Q-Learning method use
-let qTable = JSON.parse(localStorage.getItem("snakuQTable")) || {};
+let qTable = {};
+
+try {
+    qTable = JSON.parse(localStorage.getItem("snakuQTable")) || {};
+    } catch (e) {
+        qTable = {};
+        }
+
 let episodes = parseInt(localStorage.getItem("snakuEpisodes")) || 0;
 let epsilon = parseFloat(localStorage.getItem("snakuEpsilon")) || 1.0;
 
