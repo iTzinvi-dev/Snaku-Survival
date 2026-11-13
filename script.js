@@ -246,7 +246,7 @@ function draw() {
 
     //Draw Energy Orb
     ctx.fillStyle = "#ffcc00";
-    ctx.fillRect(orb.x, orb.y, box - 2, box - 2);
+    ctx.fillRect(orb.x, orb.y, box - 8, box - 8);
 
     //players snake
     ctx.fillStyle = "#00ff88"
